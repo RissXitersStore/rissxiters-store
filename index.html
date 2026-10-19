@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0b0b0d">
+  <meta name="description" content="RissXiters Store — toko aset digital dengan nuansa gaming premium.">
+  <title>RissXiters Store | Digital Shop</title>
+  <style>
+    :root{--bg:#09090b;--panel:#121216;--panel2:#19191f;--red:#ff303b;--red2:#b90e20;--text:#f6f6f8;--muted:#a7a7b2;--line:#2b2b33;--green:#42d392}
+    *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:radial-gradient(ellipse at 80% 0%,#351016 0,transparent 38%),var(--bg);color:var(--text);font-family:Inter,ui-sans-serif,system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif}
+    button,input,select,textarea{font:inherit}button,a{ -webkit-tap-highlight-color:transparent}a{color:inherit;text-decoration:none}.wrap{width:min(1120px,92%);margin:auto}
+    .topline{background:#171015;border-bottom:1px solid #4a1a22;text-align:center;padding:8px 12px;font-size:12px;color:#ffc3c8;letter-spacing:.08em}
+    header{position:sticky;top:0;z-index:10;background:#0b0b0deF;backdrop-filter:blur(14px);border-bottom:1px solid var(--line)}
+    .nav{display:flex;align-items:center;justify-content:space-between;gap:14px;padding:15px 0}.brand{display:flex;align-items:center;gap:10px;font-weight:900;letter-spacing:.03em}.brand-mark{width:39px;height:39px;display:grid;place-items:center;background:linear-gradient(145deg,#ff414b,#8c0718);border-radius:12px;box-shadow:0 7px 25px #ff303b33;font-size:19px}.brand small{display:block;color:var(--muted);font-size:10px;letter-spacing:.18em;margin-top:2px}.navlinks{display:flex;gap:18px;color:#d4d4db;font-size:13px}.cart-btn,.btn{border:0;border-radius:11px;padding:11px 15px;background:var(--red);color:#fff;font-weight:800;cursor:pointer;transition:.2s}.cart-btn:hover,.btn:hover{filter:brightness(1.12);transform:translateY(-1px)}.cart-count{background:#fff;color:#b20b1d;border-radius:99px;padding:2px 7px;margin-left:5px;font-size:11px}
+    .hero{padding:58px 0 42px;display:grid;grid-template-columns:1.15fr .85fr;align-items:center;gap:32px}.eyebrow{display:inline-flex;align-items:center;gap:8px;color:#ff8a91;font-size:12px;font-weight:900;letter-spacing:.18em;text-transform:uppercase}.pulse{width:7px;height:7px;border-radius:50%;background:var(--red);box-shadow:0 0 13px var(--red)}h1{font-size:clamp(37px,6vw,66px);line-height:1.02;letter-spacing:-.05em;margin:17px 0}.accent{color:var(--red)}.hero p{max-width:560px;color:var(--muted);line-height:1.75}.hero-actions{display:flex;gap:10px;flex-wrap:wrap;margin-top:24px}.btn.secondary{background:#1b1b21;border:1px solid #363640}.hero-stats{display:flex;gap:24px;margin-top:28px}.stat strong{display:block;font-size:18px}.stat span{color:var(--muted);font-size:11px}.hero-art{min-height:300px;display:grid;place-items:center;position:relative;overflow:hidden;border:1px solid #3d2026;border-radius:24px;background:linear-gradient(140deg,#251015,#101014 60%);padding:28px}.orbit{width:min(260px,70vw);aspect-ratio:1;border-radius:50%;border:1px solid #ff303b55;display:grid;place-items:center;box-shadow:0 0 60px #ff303b13,inset 0 0 45px #ff303b12;position:relative}.orbit:before,.orbit:after{content:"";position:absolute;border:1px dashed #ff303b55;border-radius:50%;inset:18px}.orbit:after{inset:40px;border-style:solid}.core{width:112px;height:112px;border-radius:28px;background:linear-gradient(145deg,#ff4b55,#9c0719);display:grid;place-items:center;font-size:48px;font-weight:1000;box-shadow:0 0 45px #ff303b55;transform:rotate(-8deg)}.floating{position:absolute;background:#17171d;border:1px solid #383840;border-radius:12px;padding:11px 13px;font-size:12px;box-shadow:0 10px 30px #0008}.float-a{top:24px;left:18px}.float-b{bottom:25px;right:16px}.floating b{display:block;margin-bottom:3px}.floating span{color:var(--muted);font-size:10px}
+    section{padding:30px 0 48px}.section-head{display:flex;align-items:end;justify-content:space-between;gap:20px;margin-bottom:22px}.section-head h2{font-size:27px;letter-spacing:-.03em;margin:0 0 7px}.section-head p{color:var(--muted);margin:0;font-size:13px}.tools{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:20px}.search{flex:1;min-width:190px;background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:12px 14px;color:var(--text);outline:none}.search:focus,input:focus,select:focus,textarea:focus{border-color:var(--red)!important;outline:none}.filter{background:var(--panel);border:1px solid var(--line);border-radius:10px;color:var(--text);padding:12px;min-width:145px}.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.product{background:linear-gradient(160deg,#17171d,#101014);border:1px solid var(--line);border-radius:17px;overflow:hidden;transition:.22s}.product:hover{border-color:#7e2832;transform:translateY(-3px)}.product-visual{height:150px;display:grid;place-items:center;position:relative;background:radial-gradient(circle at 50% 40%,#76202a,#231015 50%,#141418);font-size:54px}.product-visual:after{content:"";position:absolute;inset:12px;border:1px solid #ff777722;border-radius:11px}.tag{position:absolute;top:12px;left:12px;z-index:1;background:#ff303b;color:#fff;padding:5px 8px;border-radius:6px;font-size:9px;font-weight:900;letter-spacing:.08em}.product-body{padding:16px}.product-body h3{margin:0 0 7px;font-size:16px}.product-body p{margin:0;color:var(--muted);font-size:12px;line-height:1.6;min-height:38px}.product-bottom{display:flex;align-items:center;justify-content:space-between;gap:8px;margin-top:16px}.price{font-size:17px;font-weight:900}.price small{display:block;color:var(--muted);font-size:10px;font-weight:500;margin-top:3px}.add{border:1px solid #71303a;background:#291217;color:#ffb4ba;border-radius:9px;padding:9px 11px;font-size:12px;font-weight:800;cursor:pointer}.add:hover{background:var(--red);color:#fff}.empty{grid-column:1/-1;text-align:center;color:var(--muted);padding:35px;border:1px dashed var(--line);border-radius:14px}
+    .benefits{display:grid;grid-template-columns:repeat(3,1fr);gap:13px}.benefit{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:19px}.benefit .ico{font-size:22px}.benefit h3{font-size:14px;margin:10px 0 6px}.benefit p{font-size:12px;color:var(--muted);line-height:1.6;margin:0}
+    footer{border-top:1px solid var(--line);padding:27px 0;color:var(--muted);font-size:12px}.foot{display:flex;justify-content:space-between;gap:18px;flex-wrap:wrap}.foot strong{color:var(--text)}.notice{font-size:11px;color:#888895;line-height:1.7;margin-top:15px}
+    .overlay{position:fixed;inset:0;background:#000a;z-index:30;display:none;justify-content:flex-end}.overlay.show{display:flex}.drawer{width:min(440px,100%);height:100%;overflow:auto;background:#101014;border-left:1px solid var(--line);padding:22px}.drawer-head{display:flex;align-items:center;justify-content:space-between}.drawer-head h2{margin:0}.close{border:1px solid var(--line);background:#1a1a20;color:#fff;border-radius:9px;padding:8px 11px;cursor:pointer}.cart-items{margin:20px 0}.cart-item{display:grid;grid-template-columns:1fr auto;gap:10px;padding:14px 0;border-bottom:1px solid var(--line)}.cart-item strong{font-size:13px}.cart-item small{display:block;color:var(--muted);margin-top:5px}.qty{display:flex;align-items:center;gap:8px;margin-top:8px}.qty button{background:#24242b;border:1px solid var(--line);color:white;border-radius:6px;width:27px;height:27px;cursor:pointer}.remove{background:none;border:0;color:#ff8188;cursor:pointer;font-size:11px;margin-top:5px}.cart-total{display:flex;justify-content:space-between;font-weight:900;font-size:18px;padding:15px 0;border-top:1px solid var(--line)}.checkout-form{display:grid;gap:11px;margin-top:18px}.checkout-form label{font-size:12px;color:#d7d7df;display:grid;gap:6px}.checkout-form input,.checkout-form textarea,.checkout-form select{width:100%;padding:11px;border-radius:9px;border:1px solid var(--line);background:#19191f;color:var(--text)}.checkout-form textarea{min-height:70px;resize:vertical}.checkout-form .btn{width:100%}.smallprint{font-size:10px;color:var(--muted);line-height:1.5}.toast{position:fixed;bottom:20px;left:50%;transform:translate(-50%,20px);opacity:0;pointer-events:none;background:#f6f6f8;color:#111;padding:12px 16px;border-radius:10px;font-size:12px;font-weight:800;z-index:50;transition:.2s}.toast.show{opacity:1;transform:translate(-50%,0)}
+    @media(max-width:760px){.navlinks{display:none}.hero{grid-template-columns:1fr;padding-top:38px}.hero-art{min-height:260px}.grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:11px}.product-visual{height:125px;font-size:44px}.product-body{padding:12px}.product-body h3{font-size:14px}.product-bottom{align-items:flex-start;flex-direction:column}.add{width:100%}.benefits{grid-template-columns:1fr}.section-head{align-items:start;flex-direction:column}.hero-stats{gap:18px}}@media(max-width:390px){.grid{grid-template-columns:1fr}.product-visual{height:155px}.product-bottom{flex-direction:row;align-items:center}}
+  </style>
+</head>
+<body>
+  <div class="topline">✦ DIGITAL GOODS • SIMPLE CHECKOUT • MOBILE FRIENDLY ✦</div>
+  <header>
+    <div class="wrap nav">
+      <a class="brand" href="#home" aria-label="RissXiters Store beranda">
+        <span class="brand-mark">RX</span><span>RISSXITERS<small>STORE / DIGITAL GOODS</small></span>
+      </a>
+      <nav class="navlinks"><a href="#products">Produk</a><a href="#benefits">Keunggulan</a><a href="#info">Info</a></nav>
+      <button class="cart-btn" id="openCart">Keranjang <span class="cart-count" id="cartCount">0</span></button>
+    </div>
+  </header>
+  <main>
+    <div class="wrap hero" id="home">
+      <div>
+        <div class="eyebrow"><span class="pulse"></span> Premium digital marketplace</div>
+        <h1>Upgrade your<br><span class="accent">digital game.</span></h1>
+        <p>Temukan aset digital untuk kreasi, konten, dan setup gaming kamu. Pilih produk, masukkan ke keranjang, lalu kirim detail pesanan lewat checkout.</p>
+        <div class="hero-actions"><a class="btn" href="#products">Jelajahi Produk ↘</a><button class="btn secondary" id="heroCart">Lihat Keranjang</button></div>
+        <div class="hero-stats"><div class="stat"><strong>Digital</strong><span>Produk unduhan</span></div><div class="stat"><strong>24/7</strong><span>Katalog online</span></div><div class="stat"><strong>Secure*</strong><span>Checkout terhubung</span></div></div>
+      </div>
+      <div class="hero-art" aria-label="Ilustrasi digital shop">
+        <div class="floating float-a"><b>✦ DIGITAL DROP</b><span>Creative assets</span></div>
+        <div class="orbit"><div class="core">RX</div></div>
+        <div class="floating float-b"><b>STORE ONLINE</b><span>Built for creators</span></div>
+      </div>
+    </div>
+
+    <section class="wrap" id="products">
+      <div class="section-head"><div><div class="eyebrow">Shop collection</div><h2>Produk pilihan</h2><p>Contoh katalog — ubah nama, harga, dan detail di kode.</p></div></div>
+      <div class="tools"><input class="search" id="search" type="search" placeholder="Cari produk digital..." aria-label="Cari produk"><select class="filter" id="category" aria-label="Filter kategori"><option value="all">Semua kategori</option><option value="Design">Desain</option><option value="Gaming">Gaming</option><option value="Creator">Creator</option></select></div>
+      <div class="grid" id="productGrid"></div>
+    </section>
+
+    <section class="wrap" id="benefits">
+      <div class="section-head"><div><div class="eyebrow">Why RissXiters</div><h2>Belanja lebih simpel</h2><p>Info produk jelas dan alur order mudah.</p></div></div>
+      <div class="benefits">
+        <div class="benefit"><div class="ico">⚡</div><h3>Alur cepat</h3><p>Pilih produk dan jumlahnya, lalu lanjutkan ke formulir checkout.</p></div>
+        <div class="benefit"><div class="ico">🎨</div><h3>Aset digital</h3><p>Contoh produk untuk kebutuhan desain, konten, dan personalisasi perangkat.</p></div>
+        <div class="benefit"><div class="ico">🔐</div><h3>Transaksi transparan</h3><p>Harga ditampilkan sebelum order. Gunakan payment gateway resmi saat toko siap live.</p></div>
+      </div>
+    </section>
+    <section class="wrap" id="info">
+      <div class="section-head"><div><div class="eyebrow">Store information</div><h2>Informasi toko</h2><p>Pastikan detail kontak dan kebijakan toko diisi sebelum dipublikasikan.</p></div></div>
+      <div class="benefit"><h3>Butuh bantuan?</h3><p>Tambahkan kontak resmi toko, kebijakan pengembalian, ketentuan lisensi, dan estimasi pengiriman digital di bagian ini. Jangan memasukkan data pembayaran sensitif ke formulir statis.</p></div>
+    </section>
+  </main>
+  <footer><div class="wrap"><div class="foot"><div><strong>RISSXITERS STORE</strong><br>Digital goods for creators.</div><div>© <span id="year"></span> RissXiters Store</div></div><p class="notice">Demo frontend: pesanan belum tersimpan di server dan pembayaran belum diproses. Tombol checkout akan membuka aplikasi email dengan ringkasan pesanan. Untuk transaksi nyata, hubungkan backend dan payment gateway resmi. Jual hanya produk yang kamu miliki hak distribusinya.</p></div></footer>
+
+  <div class="overlay" id="cartOverlay" role="dialog" aria-modal="true" aria-label="Keranjang dan checkout">
+    <div class="drawer">
+      <div class="drawer-head"><h2>Keranjang belanja</h2><button class="close" id="closeCart" aria-label="Tutup">✕</button></div>
+      <div class="cart-items" id="cartItems"></div>
+      <div class="cart-total"><span>Total</span><span id="cartTotal">Rp0</span></div>
+      <form class="checkout-form" id="checkoutForm">
+        <h3 style="margin:5px 0 0">Checkout</h3>
+        <label>Nama pembeli<input name="name" required maxlength="80" placeholder="Nama kamu"></label>
+        <label>Email aktif<input name="email" type="email" required maxlength="120" placeholder="nama@email.com"></label>
+        <label>Catatan pesanan (opsional)<textarea name="note" maxlength="500" placeholder="Contoh: permintaan atau detail produk"></textarea></label>
+        <button class="btn" type="submit">Buat ringkasan pesanan ↗</button>
+        <p class="smallprint">Demo ini menyiapkan email pesanan melalui aplikasi email perangkatmu. Ini bukan konfirmasi pembayaran atau sistem pemrosesan transaksi.</p>
+      </form>
+    </div>
+  </div>
+  <div class="toast" id="toast" role="status"></div>
+  <script>
+    // EDIT DAFTAR PRODUK DI SINI. Harga dalam rupiah; gunakan produk legal yang boleh kamu distribusikan.
+    const products = [
+      {id:1,name:"Neon Gaming Wallpaper Pack",category:"Gaming",price:15000,icon:"🌌",tag:"BEST SELLER",desc:"Paket wallpaper digital resolusi tinggi untuk setup gaming."},
+      {id:2,name:"Premium Logo Template",category:"Design",price:25000,icon:"🎨",tag:"CREATIVE",desc:"Template logo editable untuk proyek personal atau komunitas."},
+      {id:3,name:"Streamer Overlay Pack",category:"Creator",price:35000,icon:"🎮",tag:"CREATOR",desc:"Aset overlay untuk mempercantik tampilan streaming."},
+      {id:4,name:"Social Media Banner Kit",category:"Design",price:20000,icon:"🖼️",tag:"POPULAR",desc:"Template banner untuk promosi media sosial."},
+      {id:5,name:"Mobile Icon Pack",category:"Gaming",price:12000,icon:"📱",tag:"MINIMAL",desc:"Ikon digital untuk personalisasi tampilan perangkat."},
+      {id:6,name:"Creator Starter Bundle",category:"Creator",price:45000,icon:"⚡",tag:"BUNDLE",desc:"Kumpulan aset visual untuk memulai proyek konten."}
+    ];
+    const cart = new Map();
+    const rupiah = n => new Intl.NumberFormat("id-ID",{style:"currency",currency:"IDR",maximumFractionDigits:0}).format(n);
+    const $ = id => document.getElementById(id);
+    function renderProducts(){
+      const q=$("search").value.trim().toLowerCase(), cat=$("category").value;
+      const shown=products.filter(p=>(cat==="all"||p.category===cat)&&(p.name+" "+p.desc+" "+p.category).toLowerCase().includes(q));
+      $("productGrid").innerHTML=shown.length?shown.map(p=>`<article class="product"><div class="product-visual"><span class="tag">${p.tag}</span><span aria-hidden="true">${p.icon}</span></div><div class="product-body"><h3>${p.name}</h3><p>${p.desc}</p><div class="product-bottom"><div class="price">${rupiah(p.price)}<small>${p.category} · Digital</small></div><button class="add" data-add="${p.id}">+ Tambah</button></div></div></article>`).join(""):'<div class="empty">Produk tidak ditemukan. Coba kata kunci lain.</div>';
+    }
+    function total(){let n=0;for(const [id,qty] of cart){const p=products.find(x=>x.id===id);if(p)n+=p.price*qty}return n}
+    function renderCart(){
+      const entries=[...cart.entries()];
+      $("cartCount").textContent=entries.reduce((s,[,q])=>s+q,0);
+      $("cartTotal").textContent=rupiah(total());
+      $("cartItems").innerHTML=entries.length?entries.map(([id,qty])=>{const p=products.find(x=>x.id===id);return `<div class="cart-item"><div><strong>${p.name}</strong><small>${rupiah(p.price)} / item</small><div class="qty"><button type="button" data-change="${id}" data-delta="-1" aria-label="Kurangi">−</button><span>${qty}</span><button type="button" data-change="${id}" data-delta="1" aria-label="Tambah">+</button></div></div><div style="text-align:right"><strong>${rupiah(p.price*qty)}</strong><br><button class="remove" type="button" data-remove="${id}">Hapus</button></div></div>`}).join(""):'<div class="empty">Keranjang masih kosong. Pilih produk untuk mulai.</div>';
+      $("checkoutForm").style.display=entries.length?"grid":"none";
+    }
+    function toast(msg){const el=$("toast");el.textContent=msg;el.classList.add("show");setTimeout(()=>el.classList.remove("show"),2200)}
+    function openCart(){$("cartOverlay").classList.add("show");document.body.style.overflow="hidden";renderCart()}
+    function closeCart(){$("cartOverlay").classList.remove("show");document.body.style.overflow=""}
+    $("productGrid").addEventListener("click",e=>{const b=e.target.closest("[data-add]");if(!b)return;const id=Number(b.dataset.add);cart.set(id,(cart.get(id)||0)+1);renderCart();toast("Produk ditambahkan ke keranjang")});
+    $("cartItems").addEventListener("click",e=>{const c=e.target.closest("[data-change]"),r=e.target.closest("[data-remove]");if(c){const id=Number(c.dataset.change),next=(cart.get(id)||0)+Number(c.dataset.delta);if(next<=0)cart.delete(id);else cart.set(id,next)}if(r)cart.delete(Number(r.dataset.remove));renderCart()});
+    $("openCart").addEventListener("click",openCart);$("heroCart").addEventListener("click",openCart);$("closeCart").addEventListener("click",closeCart);
+    $("cartOverlay").addEventListener("click",e=>{if(e.target===$("cartOverlay"))closeCart()});
+    document.addEventListener("keydown",e=>{if(e.key==="Escape")closeCart()});
+    $("search").addEventListener("input",renderProducts);$("category").addEventListener("change",renderProducts);
+    $("checkoutForm").addEventListener("submit",e=>{
+      e.preventDefault();if(!cart.size){toast("Keranjang masih kosong");return}
+      const fd=new FormData(e.currentTarget),name=String(fd.get("name")||"").trim(),email=String(fd.get("email")||"").trim(),note=String(fd.get("note")||"").trim();
+      const lines=[...cart.entries()].map(([id,qty])=>{const p=products.find(x=>x.id===id);return `- ${p.name} x${qty}: ${rupiah(p.price*qty)}`});
+      const body=`Halo RissXiters Store, saya ingin menanyakan pesanan berikut:\n\n${lines.join("\n")}\n\nTotal: ${rupiah(total())}\nNama: ${name}\nEmail: ${email}\nCatatan: ${note||"-"}\n\nMohon konfirmasi ketersediaan dan cara pembayaran resmi.`;
+      // Ganti alamat email contoh di bawah dengan email toko yang kamu kendalikan.
+      const storeEmail="orders@example.com";
+      window.location.href=`mailto:${storeEmail}?subject=${encodeURIComponent("Pesanan RissXiters Store - "+name)}&body=${encodeURIComponent(body)}`;
+      toast("Membuka aplikasi email untuk menyusun pesanan");
+    });
+    $("year").textContent=new Date().getFullYear();renderProducts();renderCart();
+  </script>
+</body>
+</html>
